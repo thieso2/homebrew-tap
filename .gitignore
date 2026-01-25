@@ -1,0 +1,17 @@
+# Homebrew
+.DS_Store
+*.o
+*.a
+*.so
+*.dylib
+
+# Homebrew downloads
+downloads/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
