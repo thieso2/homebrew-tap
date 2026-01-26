@@ -9,6 +9,7 @@ This is a Homebrew tap for distributing pre-built binaries of tools created by t
 Current tools:
 - **mio**: MySQL CLI with multi-server support and advanced table discovery ([repo](https://github.com/thieso2/mio))
 - **cio**: Cloud-IO, a CLI tool for Google Cloud Storage and BigQuery with short aliases and experimental FUSE filesystem support ([repo](https://github.com/thieso2/cio))
+- **envpocket**: Securely store environment files in macOS Keychain with automatic versioning and history ([repo](https://github.com/thieso2/envpocket))
 
 The repository structure:
 - `Formula/`: Contains Homebrew formula files (one `.rb` file per tool)

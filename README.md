@@ -3,6 +3,7 @@
 This is a Homebrew tap for tools by thieso2:
 - [mio](https://github.com/thieso2/mio) - MySQL CLI with multi-server support and advanced table discovery
 - [cio](https://github.com/thieso2/cio) - Cloud-IO, a CLI tool for Google Cloud Storage and BigQuery with short aliases and FUSE filesystem support
+- [envpocket](https://github.com/thieso2/envpocket) - Securely store environment files in macOS Keychain with versioning and history
 
 ## Installation
 
@@ -16,9 +17,13 @@ brew install thieso2/tap/mio
 # Or install another tool (e.g., cio)
 brew install thieso2/tap/cio
 
+# Or install envpocket
+brew install thieso2/tap/envpocket
+
 # Verify installation
 mio --version
 cio --version
+envpocket --version
 ```
 
 ## Usage
@@ -67,12 +72,39 @@ cio rm ':am/logs/*.tmp'
 cio --help
 ```
 
+### envpocket - Environment Keychain
+
+envpocket securely stores environment files in macOS Keychain with automatic versioning.
+
+```bash
+# Save an environment file to Keychain
+envpocket save myapp-prod .env.production
+
+# Retrieve the saved file
+envpocket get myapp-prod .env
+
+# View version history
+envpocket history myapp-prod
+
+# Retrieve a specific version
+envpocket get myapp-prod --version 2 .env.backup
+
+# Use vaults for environment separation
+export EP_VAULT=prod/sql
+envpocket save database-url .env.database
+
+# Team collaboration with password-protected export
+envpocket export myapp-prod --password "shared-secret"
+envpocket import myapp-prod exported.envpocket --password "shared-secret"
+```
+
 ## Updating
 
 ```bash
 # Update a specific tool
 brew upgrade thieso2/tap/mio
 brew upgrade thieso2/tap/cio
+brew upgrade thieso2/tap/envpocket
 
 # Update all tools
 brew upgrade
@@ -84,6 +116,7 @@ brew upgrade
 # Uninstall a specific tool
 brew uninstall thieso2/tap/mio
 brew uninstall thieso2/tap/cio
+brew uninstall thieso2/tap/envpocket
 
 # Remove the tap (optional)
 brew untap thieso2/tap
@@ -94,3 +127,4 @@ brew untap thieso2/tap
 Report issues at the respective GitHub repositories:
 - [mio issues](https://github.com/thieso2/mio/issues)
 - [cio issues](https://github.com/thieso2/cio/issues)
+- [envpocket issues](https://github.com/thieso2/envpocket/issues)
