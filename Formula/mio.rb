@@ -31,6 +31,6 @@ class Mio < Formula
   end
 
   test do
-    system "#{bin}/mio", "--version"
+    system "#{bin}/mio", "--help"
   end
 end
