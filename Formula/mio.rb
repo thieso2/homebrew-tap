@@ -1,28 +1,28 @@
 class Mio < Formula
   desc "MySQL CLI with multi-server support and advanced table discovery"
   homepage "https://github.com/thieso2/mio"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/thieso2/mio/releases/download/v0.4.0/mio_0.4.0_Darwin_arm64.tar.gz"
-      sha256 "99f046cdf7d5d29cc8b356df22c05f47aa4a2610762c5a89b02502f2b4b2db0b"
+      url "https://github.com/thieso2/mio/releases/download/v0.5.0/mio_0.5.0_Darwin_arm64.tar.gz"
+      sha256 "90d37b494365fd7d6da58ab7ae99a9cadfdb223c4b10530a574c73528cf02e92"
     end
     on_intel do
-      url "https://github.com/thieso2/mio/releases/download/v0.4.0/mio_0.4.0_Darwin_x86_64.tar.gz"
-      sha256 "8a9293a5902f6a576afbb5cd0e6835f61a616ff75cb754185844003bc6ab8262"
+      url "https://github.com/thieso2/mio/releases/download/v0.5.0/mio_0.5.0_Darwin_x86_64.tar.gz"
+      sha256 "683d3b1047152899af7322aded6e6f444861fdc249919a4a425be0fd8af6f1e6"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/thieso2/mio/releases/download/v0.4.0/mio_0.4.0_Linux_arm64.tar.gz"
-      sha256 "21ea6dc3292ccfb7114125c91bfb255acc5b557b730e398b5a6d5cd15192800d"
+      url "https://github.com/thieso2/mio/releases/download/v0.5.0/mio_0.5.0_Linux_arm64.tar.gz"
+      sha256 "cf91c1637da57a2d1fb77c8a96a7388a1bae1ed5629b4d7141e78d42b34ed670"
     end
     on_intel do
-      url "https://github.com/thieso2/mio/releases/download/v0.4.0/mio_0.4.0_Linux_x86_64.tar.gz"
-      sha256 "f1305d41ab8b94ebb7580f84f3546f70f63a2965661bf1d95724390af9bc2e95"
+      url "https://github.com/thieso2/mio/releases/download/v0.5.0/mio_0.5.0_Linux_x86_64.tar.gz"
+      sha256 "230ff49f5ba563ff08fd5b42708d13a37ebf4513a14c71ab784e93ad3dee8526"
     end
   end
 
