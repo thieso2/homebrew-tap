@@ -4,6 +4,7 @@ This is a Homebrew tap for tools by thieso2:
 - [mio](https://github.com/thieso2/mio) - MySQL CLI with multi-server support and advanced table discovery
 - [cio](https://github.com/thieso2/cio) - Cloud-IO, a CLI tool for Google Cloud Storage and BigQuery with short aliases and FUSE filesystem support
 - [envpocket](https://github.com/thieso2/envpocket) - Securely store environment files in macOS Keychain with versioning and history
+- [claudewatch](https://github.com/thieso2/claudewatch) - TUI monitor for Claude Code CLI instances with session history and message analytics
 
 ## Installation
 
@@ -20,10 +21,14 @@ brew install thieso2/tap/cio
 # Or install envpocket
 brew install thieso2/tap/envpocket
 
+# Or install claudewatch
+brew install thieso2/tap/claudewatch
+
 # Verify installation
 mio --version
 cio --version
 envpocket --version
+claudewatch --help
 ```
 
 ## Usage
@@ -98,6 +103,18 @@ envpocket export myapp-prod --password "shared-secret"
 envpocket import myapp-prod exported.envpocket --password "shared-secret"
 ```
 
+### claudewatch - Claude Code Monitor
+
+claudewatch is a TUI (Terminal User Interface) monitor for Claude Code CLI instances on macOS. It displays real-time metrics, session history, and complete conversation transcripts with detailed message analytics.
+
+```bash
+# Start monitoring Claude Code instances
+claudewatch
+
+# Get help
+claudewatch --help
+```
+
 ## Updating
 
 ```bash
@@ -105,6 +122,7 @@ envpocket import myapp-prod exported.envpocket --password "shared-secret"
 brew upgrade thieso2/tap/mio
 brew upgrade thieso2/tap/cio
 brew upgrade thieso2/tap/envpocket
+brew upgrade thieso2/tap/claudewatch
 
 # Update all tools
 brew upgrade
@@ -117,6 +135,7 @@ brew upgrade
 brew uninstall thieso2/tap/mio
 brew uninstall thieso2/tap/cio
 brew uninstall thieso2/tap/envpocket
+brew uninstall thieso2/tap/claudewatch
 
 # Remove the tap (optional)
 brew untap thieso2/tap
@@ -128,3 +147,4 @@ Report issues at the respective GitHub repositories:
 - [mio issues](https://github.com/thieso2/mio/issues)
 - [cio issues](https://github.com/thieso2/cio/issues)
 - [envpocket issues](https://github.com/thieso2/envpocket/issues)
+- [claudewatch issues](https://github.com/thieso2/claudewatch/issues)
