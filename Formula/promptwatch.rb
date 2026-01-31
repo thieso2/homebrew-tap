@@ -27,7 +27,7 @@ class Promptwatch < Formula
   end
 
   def install
-    bin.install "promptwatch"
+    bin.install Dir["promptwatch-*"].first => "promptwatch"
   end
 
   test do
