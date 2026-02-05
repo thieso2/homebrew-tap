@@ -5,21 +5,21 @@
 class Cio < Formula
   desc "Fast Go CLI for Google Cloud Storage and BigQuery"
   homepage "https://github.com/thieso2/cio"
-  version "0.0.5"
+  version "0.0.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/thieso2/cio/releases/download/v0.0.5/cio_0.0.5_Darwin_x86_64.tar.gz"
-      sha256 "dd6b5a14bb0c454223b08eed114f6361bf3b87eb46dd4ee9a424c3b3e3ed81da"
+      url "https://github.com/thieso2/cio/releases/download/v0.0.6/cio_0.0.6_Darwin_x86_64.tar.gz"
+      sha256 "75a02f768edf1dee2d9a2de312c17ba74d0e9db2523a0c7ff14e1f6a198618d2"
 
       def install
         bin.install "cio"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/thieso2/cio/releases/download/v0.0.5/cio_0.0.5_Darwin_arm64.tar.gz"
-      sha256 "9f487cea6495f7ba474ec2a86f086987fe091855bede968c8b81b67806dc8ad8"
+      url "https://github.com/thieso2/cio/releases/download/v0.0.6/cio_0.0.6_Darwin_arm64.tar.gz"
+      sha256 "5607c3a39cf48ab781c964166421afec255b1b038fc9354d2d906619c8261159"
 
       def install
         bin.install "cio"
@@ -29,15 +29,15 @@ class Cio < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thieso2/cio/releases/download/v0.0.5/cio_0.0.5_Linux_x86_64.tar.gz"
-      sha256 "7670ab0d31ffd0dc461162be299f019ce3e8aa5193ad441db81a2ffbca6898cc"
+      url "https://github.com/thieso2/cio/releases/download/v0.0.6/cio_0.0.6_Linux_x86_64.tar.gz"
+      sha256 "2150acdb1a6094157aba11c3245a6dcb3e6b4b1e3d3607dab78eccc45b7f170d"
       def install
         bin.install "cio"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thieso2/cio/releases/download/v0.0.5/cio_0.0.5_Linux_arm64.tar.gz"
-      sha256 "ab4a33ea65a6cc64978e69fdc8b2297ceabcb6cd62c01b8da9921c361f53e457"
+      url "https://github.com/thieso2/cio/releases/download/v0.0.6/cio_0.0.6_Linux_arm64.tar.gz"
+      sha256 "184d83e7f5cb4bf038d30cc82675186af7f35308d3784e2bba47a614f39130c4"
       def install
         bin.install "cio"
       end
