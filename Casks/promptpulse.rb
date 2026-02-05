@@ -1,6 +1,6 @@
 cask "promptpulse" do
-  version "0.4.2"
-  sha256 "324d5586bc783d8ab25b9f8a878b3cad1b33cd120a83928add4e827f3c6e3391"
+  version "0.4.3"
+  sha256 "907a2490a1ea21aad30801e1c0d00281c9cd4ecc372fba1cd0e92b3ad32d149d"
 
   url "https://github.com/thieso2/PromptPulse/releases/download/v#{version}/PromptPulse-#{version}-macOS.zip"
   name "PromptPulse"
@@ -12,6 +12,7 @@ cask "promptpulse" do
   app "PromptPulse.app"
 
   zap trash: [
-    "~/Library/Preferences/com.promptpulse.app.plist",
+    "~/Library/Preferences/dev.thies.PromptPulse.plist",
+    "~/Library/Application Support/PromptPulse",
   ]
 end
