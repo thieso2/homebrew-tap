@@ -1,6 +1,6 @@
 cask "promptpulse" do
-  version "0.3.2"
-  sha256 "8476961fef52aee5ed4444a825668a61c5fd5b29ee6dc425d6a5dd36186a243d"
+  version "0.3.3"
+  sha256 "4f086f82f7511bedef7822e0abddf640b1ea041bc1613c1c546b78ab423ebcfc"
 
   url "https://github.com/thieso2/PromptPulse/releases/download/v#{version}/PromptPulse-#{version}-macOS.zip"
   name "PromptPulse"
