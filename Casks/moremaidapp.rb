@@ -9,7 +9,7 @@ cask "moremaidapp" do
   desc "Markdown viewer for macOS"
   homepage "https://github.com/thieso2/MoremaidApp"
 
-  depends_on macos: ">= :tahoe"
+  depends_on macos: ">= :sequoia"
 
   app "Moremaid.app"
 
