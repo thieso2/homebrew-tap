@@ -5,21 +5,21 @@
 class Sandcastle < Formula
   desc "CLI for Sandcastle, a self-hosted shared Docker sandbox platform"
   homepage "https://github.com/thieso2/Sandcastle"
-  version "0.8.8"
+  version "0.8.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/thieso2/Sandcastle/releases/download/v0.8.8/sandcastle-darwin-amd64.tar.gz"
-      sha256 "ff3846c7894be422a9257f9479def2908ea9714ed461286f5ca7acf14eea09c5"
+      url "https://github.com/thieso2/Sandcastle/releases/download/v0.8.9/sandcastle-darwin-amd64.tar.gz"
+      sha256 "1244ff1e315fd41b19dc2ad8297d04da6192b0e55e2cc9dddcd7696e5b66f491"
 
       def install
         bin.install "sandcastle"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/thieso2/Sandcastle/releases/download/v0.8.8/sandcastle-darwin-arm64.tar.gz"
-      sha256 "0a1e4531956fdfc99a3ca98c939404ffa1e3ba08d635ec71a77ced722f19f67c"
+      url "https://github.com/thieso2/Sandcastle/releases/download/v0.8.9/sandcastle-darwin-arm64.tar.gz"
+      sha256 "a8432361127e9194ff83d629944f172096745bc75c65fafa7907199d02aea295"
 
       def install
         bin.install "sandcastle"
@@ -29,15 +29,15 @@ class Sandcastle < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thieso2/Sandcastle/releases/download/v0.8.8/sandcastle-linux-amd64.tar.gz"
-      sha256 "59dcb397e33baf0965521e42f74a12a8d679dcaaefbaa1ed7341a31ac877a05f"
+      url "https://github.com/thieso2/Sandcastle/releases/download/v0.8.9/sandcastle-linux-amd64.tar.gz"
+      sha256 "2345eb5d2cee1107a87756f6fee8c51d8e0fb3a553c72976ade8b756fc1eebe0"
       def install
         bin.install "sandcastle"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thieso2/Sandcastle/releases/download/v0.8.8/sandcastle-linux-arm64.tar.gz"
-      sha256 "b6a98870c41765c7e8d2384a9273f17b81c05c95a75f9b3c5557613f5673f5d7"
+      url "https://github.com/thieso2/Sandcastle/releases/download/v0.8.9/sandcastle-linux-arm64.tar.gz"
+      sha256 "28f1b68dddd8e66f9dc64c9ca66c994c20c3f0536e80265848f9d0cc066d1d6f"
       def install
         bin.install "sandcastle"
       end
