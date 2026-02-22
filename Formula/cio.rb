@@ -5,23 +5,23 @@
 class Cio < Formula
   desc "Fast Go CLI for Google Cloud Storage and BigQuery"
   homepage "https://github.com/thieso2/cio"
-  version "0.0.9"
+  version "0.0.10"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/thieso2/cio/releases/download/v0.0.9/cio_0.0.9_Darwin_x86_64.tar.gz"
-      sha256 "6a7a48d85c8a1fef695dae34b75eb1767ccbcfd7c03d8d58be1581d9b5f40311"
+      url "https://github.com/thieso2/cio/releases/download/v0.0.10/cio_0.0.10_Darwin_x86_64.tar.gz"
+      sha256 "cb756e160e2f2adb285d39eb0968c24b7716e96ae137a1685a2e3957ef438f82"
 
-      def install
+      define_method(:install) do
         bin.install "cio"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/thieso2/cio/releases/download/v0.0.9/cio_0.0.9_Darwin_arm64.tar.gz"
-      sha256 "fb7ce1ecebd7b9ef7d24da930f6ef8542fc981f697dad3a03519e677360fec8e"
+      url "https://github.com/thieso2/cio/releases/download/v0.0.10/cio_0.0.10_Darwin_arm64.tar.gz"
+      sha256 "453c131c2e4776536c1d8bf875c78471dd7c459e9d1e3ee590cc1594862bbfa5"
 
-      def install
+      define_method(:install) do
         bin.install "cio"
       end
     end
@@ -29,16 +29,16 @@ class Cio < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thieso2/cio/releases/download/v0.0.9/cio_0.0.9_Linux_x86_64.tar.gz"
-      sha256 "a36161c32d5896e435b80fc246c90c52a9b34cf6305b1c2bff1c601c6780d43d"
-      def install
+      url "https://github.com/thieso2/cio/releases/download/v0.0.10/cio_0.0.10_Linux_x86_64.tar.gz"
+      sha256 "a17848d23c27ccf0d34dad977ec4e7e9480a41e5cd6b167eff20d79774335981"
+      define_method(:install) do
         bin.install "cio"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thieso2/cio/releases/download/v0.0.9/cio_0.0.9_Linux_arm64.tar.gz"
-      sha256 "a92b1b1960268f9e68d6c2abc660bcd5b60faccded5bcbcec9bc005287079b1d"
-      def install
+      url "https://github.com/thieso2/cio/releases/download/v0.0.10/cio_0.0.10_Linux_arm64.tar.gz"
+      sha256 "4ed22f84b4301a30f81fd039fcb3ccfec46d6fba67ab6d35a747fe4d4f9df0c9"
+      define_method(:install) do
         bin.install "cio"
       end
     end
