@@ -5,21 +5,21 @@
 class Cio < Formula
   desc "Fast Go CLI for Google Cloud Storage and BigQuery"
   homepage "https://github.com/thieso2/cio"
-  version "0.0.18"
+  version "0.0.19"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/thieso2/cio/releases/download/v0.0.18/cio_0.0.18_Darwin_x86_64.tar.gz"
-      sha256 "ad7709002afc13ec43fc9564bc88556f2b2d1b068de3cac112ee1b45513d0073"
+      url "https://github.com/thieso2/cio/releases/download/v0.0.19/cio_0.0.19_Darwin_x86_64.tar.gz"
+      sha256 "fe5d48dac8e316940049e6bbb5b8e5afb0e26bc1647c7b50222f2af0145c0b88"
 
       define_method(:install) do
         bin.install "cio"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/thieso2/cio/releases/download/v0.0.18/cio_0.0.18_Darwin_arm64.tar.gz"
-      sha256 "a7507b113af0be62a789b5cde370492033c2b330d90ecd04baa633a310fa7842"
+      url "https://github.com/thieso2/cio/releases/download/v0.0.19/cio_0.0.19_Darwin_arm64.tar.gz"
+      sha256 "bb8e7d92ff8c4ae67ed070909beb93d9900dd592610bcaddace4a6c008e6dd8f"
 
       define_method(:install) do
         bin.install "cio"
@@ -29,15 +29,15 @@ class Cio < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thieso2/cio/releases/download/v0.0.18/cio_0.0.18_Linux_x86_64.tar.gz"
-      sha256 "e8fae25264a937605be927df4ae0446307bf645b10cefd45f1187e7ac4e0bbac"
+      url "https://github.com/thieso2/cio/releases/download/v0.0.19/cio_0.0.19_Linux_x86_64.tar.gz"
+      sha256 "009000e484e14396eb6a0f5170d4ccfcfe9bc3f88f6a65dde5a1a3ac39e4344d"
       define_method(:install) do
         bin.install "cio"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thieso2/cio/releases/download/v0.0.18/cio_0.0.18_Linux_arm64.tar.gz"
-      sha256 "79467238762728ab3c6295dd58ebf98a844e7de99d1c7831c9e369471ea8a2c0"
+      url "https://github.com/thieso2/cio/releases/download/v0.0.19/cio_0.0.19_Linux_arm64.tar.gz"
+      sha256 "11147ff6e3f736612dc4b8b31468d776265c4e2aa89a6b4e17ffdf8df23ff50a"
       define_method(:install) do
         bin.install "cio"
       end
