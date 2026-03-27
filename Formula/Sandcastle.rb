@@ -11,7 +11,7 @@ class Sandcastle < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/thieso2/Sandcastle/releases/download/v0.8.86/sandcastle-darwin-amd64.tar.gz"
-      sha256 "6488dfc8f44633cfaaeb68e951008c4ab2dd26fbab41b8f8ac9a408b0f833792"
+      sha256 "acb6791a0b34f4370e564130eb8f54cf38bfeb41e6baee92edc60c5f5f9402a9"
 
       define_method(:install) do
         bin.install "sandcastle"
@@ -19,7 +19,7 @@ class Sandcastle < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/thieso2/Sandcastle/releases/download/v0.8.86/sandcastle-darwin-arm64.tar.gz"
-      sha256 "5c0d4fe21e77d058f5931b619cf6d9fdc3381a5898e8e22c27e498cfae0b25ef"
+      sha256 "efe5c37b7e5c6731ff1a12912c11bc22107ba193d4bd9269c5ef37242acff63e"
 
       define_method(:install) do
         bin.install "sandcastle"
@@ -30,14 +30,14 @@ class Sandcastle < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/thieso2/Sandcastle/releases/download/v0.8.86/sandcastle-linux-amd64.tar.gz"
-      sha256 "876f83ff71e044b38d5ffd318c0d00d3a96475e46051abf750053f2cc9fc1785"
+      sha256 "8a89427059275b7596e8cdaf5c145105d6db72f4c0e84d66704098b21726148a"
       define_method(:install) do
         bin.install "sandcastle"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/thieso2/Sandcastle/releases/download/v0.8.86/sandcastle-linux-arm64.tar.gz"
-      sha256 "8fc0bb17665e6a59c085c9392113d908e7c4348b964f6825703f0fb53e894cc5"
+      sha256 "9765c7e0c8aedc87457fd597ca07480c197dd258521784ff1ba4179f15d9811d"
       define_method(:install) do
         bin.install "sandcastle"
       end
