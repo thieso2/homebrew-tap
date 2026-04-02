@@ -5,21 +5,21 @@
 class Sandcastle < Formula
   desc "CLI for Sandcastle, a self-hosted shared Docker sandbox platform"
   homepage "https://github.com/thieso2/Sandcastle"
-  version "0.8.91"
+  version "0.8.92"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/thieso2/Sandcastle/releases/download/v0.8.91/sandcastle-darwin-amd64.tar.gz"
-      sha256 "143cfcfbd45f78d223c1ffa2c29cd1923730a8630d9911127279cc92b25a040b"
+      url "https://github.com/thieso2/Sandcastle/releases/download/v0.8.92/sandcastle-darwin-amd64.tar.gz"
+      sha256 "40dd9e8c6412a00b9e691a346a63617570e030bd59f70323118b034991a8bae0"
 
       define_method(:install) do
         bin.install "sandcastle"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/thieso2/Sandcastle/releases/download/v0.8.91/sandcastle-darwin-arm64.tar.gz"
-      sha256 "fb27ebcde2644b3f8483d62234f54b61b15cc17929a9a2594659ca5205172d88"
+      url "https://github.com/thieso2/Sandcastle/releases/download/v0.8.92/sandcastle-darwin-arm64.tar.gz"
+      sha256 "b1044967a3bdf308a92d2564bd76af5e11b1cfa32dd78a770318f2d15d3dbd52"
 
       define_method(:install) do
         bin.install "sandcastle"
@@ -29,15 +29,15 @@ class Sandcastle < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thieso2/Sandcastle/releases/download/v0.8.91/sandcastle-linux-amd64.tar.gz"
-      sha256 "b65070acba614ae5650515bb31614badbf7d81813085defbe0870152c394aa18"
+      url "https://github.com/thieso2/Sandcastle/releases/download/v0.8.92/sandcastle-linux-amd64.tar.gz"
+      sha256 "9b56dca83067069b5a0b6b622796e50f0877e57306123c6e17db86809802e61c"
       define_method(:install) do
         bin.install "sandcastle"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thieso2/Sandcastle/releases/download/v0.8.91/sandcastle-linux-arm64.tar.gz"
-      sha256 "b769368a209d39bca2e8b7dfd50905ac3d6d8f9a853c998ac18c564daf4826ce"
+      url "https://github.com/thieso2/Sandcastle/releases/download/v0.8.92/sandcastle-linux-arm64.tar.gz"
+      sha256 "70671fe84236294e3493f7d853ed64424076765f89585a691eabee3da0354d26"
       define_method(:install) do
         bin.install "sandcastle"
       end
