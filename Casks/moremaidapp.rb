@@ -1,8 +1,8 @@
 cask "moremaidapp" do
-  version "0.4.2"
-  sha256 "ffef19b72362da642802545c3264565ad3c9c4913be5b7ffe543c6102435633b"
+  version "0.4.4"
+  sha256 "c896492963e3a3b0ce37ebf9993b926ed19bfad4d3f1d10dedef0a15d4924e52"
 
-  url "https://github.com/thieso2/MoremaidApp/releases/download/v#{version}/Moremaid-0.4.2-macOS.zip",
+  url "https://github.com/thieso2/MoremaidApp/releases/download/v#{version}/Moremaid-0.4.4-macOS.zip",
       verified: "github.com/thieso2/MoremaidApp/"
 
   name "Moremaid"
