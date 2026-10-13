@@ -2,25 +2,25 @@
 cask "sandcastle" do
   binary "sandcastle", target: "sc"
 
-  version "0.20.0"
+  version "0.20.1"
 
   on_macos do
     on_arm do
-      sha256 "f436f034bdbd3b351ed0daf2c75efe8f8621e7b12f114741266d849545ed2900"
+      sha256 "3acc1fd5088358d7d5f09fed84fd71802a64498b7e07ca53ca27c23a698aed25"
       url "https://github.com/thieso2/sandcastle-incus/releases/download/v#{version}/sandcastle-darwin-arm64.tar.gz"
     end
     on_intel do
-      sha256 "425bc8382ec0f18d81a28c6ee58b1a2b7a7f60eb55269863ab525c5cb41c8505"
+      sha256 "f171a8c6a4d99bb987ec59cf09fbfb00bcbf0d71ba61f8f1d54d4f7acbc202b7"
       url "https://github.com/thieso2/sandcastle-incus/releases/download/v#{version}/sandcastle-darwin-amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "93bf5ae3fb9b750b51f391c891fb44c622ece705806eb454f930b644278e39d7"
+      sha256 "e663a206be1c61a45d3fc0d658b2201256508e683fcdfef036db0650e309753b"
       url "https://github.com/thieso2/sandcastle-incus/releases/download/v#{version}/sandcastle-linux-arm64.tar.gz"
     end
     on_intel do
-      sha256 "49be3ca322882f1839b52fdeb3ad99841cfed77c93569b51733109380087220d"
+      sha256 "9886a6ef836fa26b79349700133db02acd860cf3d058c702ea896dce7007a696"
       url "https://github.com/thieso2/sandcastle-incus/releases/download/v#{version}/sandcastle-linux-amd64.tar.gz"
     end
   end
