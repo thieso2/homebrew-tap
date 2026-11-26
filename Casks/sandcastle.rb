@@ -2,32 +2,32 @@
 cask "sandcastle" do
   binary "sandcastle", target: "sc"
 
-  version "0.25.1"
+  version "0.26.0"
 
   on_macos do
     on_arm do
-      sha256 "5f1b6817a42b4dc4efd897d2add150f609e818adef298a7306dacd6bcd0a8c65"
-      url "https://github.com/thieso2/sandcastle-incus/releases/download/v#{version}/sandcastle-darwin-arm64.tar.gz"
+      sha256 "bc14826f1dfd197a5270c0c1557004090e59cbe34a9339811a3643bc7c9c21c4"
+      url "https://github.com/moyn-dev/sandcastle-incus/releases/download/v#{version}/sandcastle-darwin-arm64.tar.gz"
     end
     on_intel do
-      sha256 "96e4e9dba87a5e2e7f6846816934ead82a204dc52e7ef8c1b29303a23622ed2a"
-      url "https://github.com/thieso2/sandcastle-incus/releases/download/v#{version}/sandcastle-darwin-amd64.tar.gz"
+      sha256 "3b6c9950444a14e430f48aabd1254ba2134fac99903b69f245e03d31efcec6f5"
+      url "https://github.com/moyn-dev/sandcastle-incus/releases/download/v#{version}/sandcastle-darwin-amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "34932f6562b5ce40401eae36e47ec546c5700647ab2bde05bb52b76d22645e14"
-      url "https://github.com/thieso2/sandcastle-incus/releases/download/v#{version}/sandcastle-linux-arm64.tar.gz"
+      sha256 "958de0c7f31c990007b29f5253cda206b70fea1a2d1500483b95e0bdc45a274d"
+      url "https://github.com/moyn-dev/sandcastle-incus/releases/download/v#{version}/sandcastle-linux-arm64.tar.gz"
     end
     on_intel do
-      sha256 "75b9d678d54a7fab358f13413d0112eddeb98482e4999b2a972c41f983524c56"
-      url "https://github.com/thieso2/sandcastle-incus/releases/download/v#{version}/sandcastle-linux-amd64.tar.gz"
+      sha256 "1a3a8dd11f2e51b8fe701dd40a30680f56c21768b0fbad12ab36279d6ea51316"
+      url "https://github.com/moyn-dev/sandcastle-incus/releases/download/v#{version}/sandcastle-linux-amd64.tar.gz"
     end
   end
 
   name "sandcastle"
   desc "CLI for Sandcastle — multi-tenant developer sandboxes on Incus"
-  homepage "https://github.com/thieso2/sandcastle-incus"
+  homepage "https://github.com/moyn-dev/sandcastle-incus"
 
   livecheck do
     skip "Auto-generated on release."
